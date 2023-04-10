@@ -20,6 +20,13 @@ const Eggs = () => {
     setShowEgg4(true);
   };
 
+  const handleResetClick = () => {
+    setShowEgg1(false);
+    setShowEgg2(false);
+    setShowEgg3(false);
+    setShowEgg4(false);
+  };
+
   return (
     <div className="container">
       <div
@@ -38,6 +45,9 @@ const Eggs = () => {
         className={showEgg4 ? "egg-four" : "egg-four-unhidden"}
         onClick={handleEgg4Click}
       ></div>
+      <button onClick={handleResetClick} className="egg-reset">
+        Reset
+      </button>
     </div>
   );
 };

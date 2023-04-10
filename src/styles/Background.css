@@ -4,6 +4,8 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
+  border: 5px solid green;
+  border-radius: 8px;
 }
 
 .egg-title {
@@ -18,6 +20,20 @@
 .egg-title {
   font-family: "Erica One", cursive;
   font-size: 90px;
+  color: yellow;
+  -webkit-text-stroke: 2px black;
+}
+
+.egg-reset {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 15rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  background-color: green;
+  font-family: "Erica One", cursive;
   color: yellow;
   -webkit-text-stroke: 2px black;
 }
