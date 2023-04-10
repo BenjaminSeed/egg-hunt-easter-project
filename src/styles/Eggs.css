@@ -1,0 +1,164 @@
+/* body {
+  background-color: #bee3db;
+  height: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.container {
+  position: relative;
+}
+
+.egg-hidden {
+  display: none;
+}
+
+/* ALL EGGS */
+
+.egg-one,
+.egg-one-unhidden,
+.egg-two-unhidden,
+.egg-three-unhidden,
+.egg-four-unhidden,
+.egg-two,
+.egg-three,
+.egg-four {
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  width: 63px;
+  height: 90px;
+  box-shadow: inset -5px -5px rgba(0, 0, 0, 1);
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  /* top: 100px; */
+}
+
+/* EGG ONE */
+
+.egg-one {
+  right: 50px;
+  top: 400px;
+  background: repeating-linear-gradient(
+    #f9c74f,
+    #f9c74f 10px,
+    #90be6d 10px,
+    #90be6d 20px
+  );
+  transition: opacity 0.5s ease-in-out;
+}
+
+.egg-one-unhidden:hover {
+  visibility: visible;
+  cursor: grab;
+}
+
+.egg-one-unhidden {
+  right: 50px;
+  top: 400px;
+  background: repeating-linear-gradient(
+    #f9c74f,
+    #f9c74f 10px,
+    #90be6d 10px,
+    #90be6d 20px
+  );
+  opacity: 0;
+}
+
+/* EGG TWO */
+
+.egg-two {
+  left: 500px;
+  top: 250px;
+  background-color: pink;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.egg-two-unhidden:hover {
+  visibility: visible;
+  cursor: grab;
+}
+
+.egg-two-unhidden {
+  left: 500px;
+  top: 250px;
+  background-color: pink;
+  opacity: 0;
+}
+
+/* EGG THREE */
+
+.egg-three {
+  left: 300px;
+  top: 800px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #70c1b3,
+    #70c1b3 20px,
+    #247ba0 20px,
+    #247ba0 40px
+  );
+  transition: opacity 0.5s ease-in-out;
+}
+
+.egg-three-unhidden {
+  left: 300px;
+  top: 800px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #70c1b3,
+    #70c1b3 20px,
+    #247ba0 20px,
+    #247ba0 40px
+  );
+  opacity: 0;
+}
+
+.egg-three-unhidden:hover {
+  visibility: visible;
+  cursor: grab;
+}
+/* EGG FOUR */
+
+.egg-four {
+  left: 1000px;
+  top: 900px;
+  background: repeating-linear-gradient(
+    -5deg,
+    #f9c74f,
+    white 20px,
+    #247ba0 20px,
+    #247ba0 40px
+  );
+  transition: opacity 0.5s ease-in-out;
+}
+
+.egg-four-unhidden {
+  left: 1000px;
+  top: 900px;
+  background: repeating-linear-gradient(
+    -5deg,
+    #f9c74f,
+    white 20px,
+    #247ba0 20px,
+    #247ba0 40px
+  );
+  opacity: 0;
+}
+
+.egg-four-unhidden:hover {
+  visibility: visible;
+  cursor: grab;
+}
+/* 
+.shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  width: 130px;
+  height: 20px;
+  top: 65px;
+  left: -300px;
+  box-shadow: 200px 0 rgba(0, 0, 0, 0.1), 400px 0 rgba(0, 0, 0, 0.1);
+} */
