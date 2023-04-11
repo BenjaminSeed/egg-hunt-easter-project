@@ -21,9 +21,11 @@
 .egg-two-unhidden,
 .egg-three-unhidden,
 .egg-four-unhidden,
+.egg-five-unhidden,
 .egg-two,
 .egg-three,
-.egg-four {
+.egg-four,
+.egg-five {
   position: absolute;
   overflow: hidden;
   display: inline-block;
@@ -150,15 +152,36 @@
   visibility: visible;
   cursor: grab;
 }
-/* 
-.shadow {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  z-index: -1;
-  width: 130px;
-  height: 20px;
-  top: 65px;
-  left: -300px;
-  box-shadow: 200px 0 rgba(0, 0, 0, 0.1), 400px 0 rgba(0, 0, 0, 0.1);
-} */
+
+/* EGG FIVE */
+
+.egg-five {
+  left: 800px;
+  top: 500px;
+  background: repeating-linear-gradient(
+    -5deg,
+    green,
+    white 20px,
+    #247ba0 20px,
+    #247ba0 40px
+  );
+  transition: opacity 0.5s ease-in-out;
+}
+
+.egg-five-unhidden {
+  left: 800px;
+  top: 500px;
+  background: repeating-linear-gradient(
+    -5deg,
+    green,
+    white 20px,
+    #247ba0 20px,
+    #247ba0 40px
+  );
+  opacity: 0;
+}
+
+.egg-five-unhidden:hover {
+  visibility: visible;
+  cursor: grab;
+}
