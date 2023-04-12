@@ -3,14 +3,14 @@
 .egg-img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
-  border: 5px solid green;
-  border-radius: 8px;
+  object-fit: cover;
+  /* border: 5px solid green; */
+  border-radius: 2%;
 }
 
 .egg-title {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -26,10 +26,10 @@
 
 .egg-reset {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 15rem;
+  margin-top: 12rem;
   font-size: 2rem;
   border-radius: 8px;
   background-color: green;
