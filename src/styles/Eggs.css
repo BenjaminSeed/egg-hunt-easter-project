@@ -17,11 +17,11 @@
 /* ALL EGGS */
 
 .egg-one,
-.egg-one-unhidden,
-.egg-two-unhidden,
-.egg-three-unhidden,
-.egg-four-unhidden,
-.egg-five-unhidden,
+.egg-one-hidden,
+.egg-two-hidden,
+.egg-three-hidden,
+.egg-four-hidden,
+.egg-five-hidden,
 .egg-two,
 .egg-three,
 .egg-four,
@@ -50,12 +50,12 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.egg-one-unhidden:hover {
+.egg-one-hidden:hover {
   visibility: visible;
   cursor: grab;
 }
 
-.egg-one-unhidden {
+.egg-one-hidden {
   right: 50px;
   top: 400px;
   background: repeating-linear-gradient(
@@ -76,12 +76,12 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.egg-two-unhidden:hover {
+.egg-two-hidden:hover {
   visibility: visible;
   cursor: grab;
 }
 
-.egg-two-unhidden {
+.egg-two-hidden {
   left: 500px;
   top: 250px;
   background-color: pink;
@@ -103,7 +103,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.egg-three-unhidden {
+.egg-three-hidden {
   left: 300px;
   top: 800px;
   background: repeating-linear-gradient(
@@ -116,7 +116,7 @@
   opacity: 0;
 }
 
-.egg-three-unhidden:hover {
+.egg-three-hidden:hover {
   visibility: visible;
   cursor: grab;
 }
@@ -135,7 +135,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.egg-four-unhidden {
+.egg-four-hidden {
   left: 1000px;
   top: 900px;
   background: repeating-linear-gradient(
@@ -148,7 +148,7 @@
   opacity: 0;
 }
 
-.egg-four-unhidden:hover {
+.egg-four-hidden:hover {
   visibility: visible;
   cursor: grab;
 }
@@ -168,7 +168,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.egg-five-unhidden {
+.egg-five-hidden {
   left: 800px;
   top: 500px;
   background: repeating-linear-gradient(
@@ -181,7 +181,7 @@
   opacity: 0;
 }
 
-.egg-five-unhidden:hover {
+.egg-five-hidden:hover {
   visibility: visible;
   cursor: grab;
 }

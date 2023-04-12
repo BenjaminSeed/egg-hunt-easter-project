@@ -37,7 +37,7 @@ const Eggs = () => {
         return (
           <div
             key={eggs.id}
-            className={eggs.show ? `egg-${eggs.id}` : `egg-${eggs.id}-unhidden`}
+            className={eggs.show ? `egg-${eggs.id}` : `egg-${eggs.id}-hidden`}
             onClick={() => handleClick(eggs.id)}
           >
             {eggs.show && <Confetti />}
