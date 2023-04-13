@@ -33,14 +33,14 @@ const Eggs = () => {
 
   return (
     <div className="container">
-      {showEggs.map((eggs) => {
+      {showEggs.map((egg) => {
         return (
           <div
-            key={eggs.id}
-            className={eggs.show ? `egg-${eggs.id}` : `egg-${eggs.id}-hidden`}
-            onClick={() => handleClick(eggs.id)}
+            key={egg.id}
+            className={egg.show ? `egg-${egg.id}` : `egg-${egg.id}-hidden`}
+            onClick={() => handleClick(egg.id)}
           >
-            {eggs.show && <Confetti />}
+            {egg.show && <Confetti />}
           </div>
         );
       })}
